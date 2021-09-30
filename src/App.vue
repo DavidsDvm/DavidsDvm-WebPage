@@ -1,26 +1,31 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <LateralBar />
+  <HomePage />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import LateralBar from './components/LateralBar'
+import HomePage from './components/HomePage'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    LateralBar,
+    HomePage
   }
 }
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: 'Righteous', cursive;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  background-color: #1B1C22;
+  display: flex;
+  flex-direction: row;
 }
 </style>
