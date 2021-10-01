@@ -2,7 +2,7 @@
   <div class="lateralBar d-flex flex-column flex-shrink-0 bg-dark__project">  
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
       <a href="/" class="nav-link py-3 mb-3 mt-2">
-        <img src="../assets/personalLogo.png" alt="mdo" class="rounded-circle barIcons--tittle">
+        <img src="../assets/img/personalLogo.png" alt="mdo" class="rounded-circle barIcons--tittle">
       </a>
       <li class="nav-item nav-item__above">
         <div class="nav-link py-3 icon-active">
@@ -65,6 +65,8 @@ export default {
 .lateralBar {
   width: 4.6rem;
   height: 100vh;
+  max-width: 4.6rem;
+  min-height: 100vh;
   position: fixed;
   z-index: 1;
   top: 0;
