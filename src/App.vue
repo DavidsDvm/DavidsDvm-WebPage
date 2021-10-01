@@ -1,17 +1,17 @@
 <template>
   <LateralBar />
-  <HomePage />
+  <MainContent />
 </template>
 
 <script>
 import LateralBar from './components/LateralBar'
-import HomePage from './components/HomePage'
+import MainContent from './components/MainContent'
 
 export default {
   name: 'App',
   components: {
     LateralBar,
-    HomePage
+    MainContent
   }
 }
 </script>
@@ -27,5 +27,12 @@ export default {
   background-color: #1B1C22;
   display: flex;
   flex-direction: row;
+  align-items: stretch;
+}
+
+.mainContent {
+  width: calc(100wh - 10rem);
+  font-size: 100px;
+  float: right;
 }
 </style>
