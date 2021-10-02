@@ -1,6 +1,6 @@
 <template>
-  <LateralBar />
-  <MainContent />
+  <LateralBar :navActive="activeIndex" />
+  <MainContent @actuallySection="getActualScroll($event)" />
 </template>
 
 <script>
@@ -12,6 +12,16 @@ export default {
   components: {
     LateralBar,
     MainContent
+  },
+  data () {
+    return {
+      activeIndex : 'home'
+    } 
+  },
+  methods: {
+    getActualScroll(element) {
+      this.activeIndex = element;
+    }  
   }
 }
 </script>
