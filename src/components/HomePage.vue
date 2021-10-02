@@ -5,6 +5,7 @@
         I'm <span class="bordered-text">David</span>,<br />
         Web Developer
     </div>
+    <Scrollwatcher sentinal-name="AboutMe" @on-intersection-element="scrolledOn()" />
     <transition name="view" appear enter-active-class="animate__animated animate__backInLeft" leave-active-class="animate__animated animate__bounceOut">
     <div class="bigCenter-console">
         <div class="font-card"></div>
@@ -26,6 +27,8 @@
 </template>
 
 <script>
+import Scrollwatcher from './ScrollWatcher';
+
 export default {
     name: 'HomePage',
     data(){
@@ -37,6 +40,9 @@ export default {
     },
     mounted() {
         this.consoleFocus()
+    },
+    components: {
+        Scrollwatcher
     },
     methods: {
         submitConsole(event){
@@ -77,6 +83,9 @@ export default {
             allText = allText + this.seperator;
             console.log('sise hizo');
             this.$refs.consoleData.innerHTML = allText;
+        },
+        scrolledOn() {
+            this.$emit('actualActiveNav', 'home');
         }
     },
     computed: {
