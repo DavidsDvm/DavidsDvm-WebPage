@@ -1,6 +1,6 @@
 <template>
     <div class="Projects--mainContent">
-        <div class="Projects">
+        <div class="Projects-tittle">
             <div class="Projects--main">
                 <div class="sectionsTittle--text">
                     >Projects

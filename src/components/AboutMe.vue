@@ -1,18 +1,10 @@
 <template>
   <div class="aboutMe--mainContent">
-    <div class="aboutMe">
-      <div class="aboutMe--main">
-        <div class="sectionsTittle--text">
-          >About me
-        </div>
-      </div>
-
-      <div class="aboutMe--main">
-
-      </div>
+    <div class="sectionsTittle--text">
+      >About me
     </div>
-    <div class="aboutMe pt-5">
-      <div class="aboutMe--main">
+    <div class="aboutMe pt-5 pb-5">
+      <div class="aboutMe--main aboutMe--about">
         <div class="aboutMeContent--text">
           Hello! My name is David and I enjoy creating
           things that live on the internet. My interest in
@@ -32,7 +24,7 @@
       </div>
       <div class="aboutMe--image">
         <p class="aboutMe--image__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam possimus, neque, adipisci aperiam illo accusantium excepturi, maiores aspernatur repudiandae laboriosam expedita? Veritatis aut corporis nesciunt dolorem, incidunt exercitationem ad tempore! Hic cupiditate commodi ratione reiciendis facilis optio aliquam dolor ducimus. Eligendi fugit et, blanditiis provident sed dolore iusto exercitationem, ex dolor rem aspernatur nulla fugiat eos earum, facere doloribus aliquid a vel temporibus quidem maiores nisi molestiae doloremque hic. Repellat iste ad perspiciatis fuga! Cumque quas consequatur eligendi id laborum temporibus sed laudantium illo ex ipsam dolorum adipisci, accusamus mollitia corporis! Porro magnam laborum eius unde voluptatem, recusandae sit, dolorum qui deleniti voluptas voluptatibus tenetur molestiae quos harum ullam? Tempore aliquid minima quis animi eveniet possimus aliquam eius harum quia, quibusdam rem repudiandae molestiae labore praesentium. Necessitatibus, sed maxime. Cupiditate culpa sint dolor perspiciatis, id optio soluta fuga obcaecati suscipit ratione quaerat vitae itaque! Quibusdam possimus et repellat voluptatem culpa optio incidunt quisquam est earum corrupti nostrum amet beatae vel, atque quasi quaerat hic animi enim odit iste voluptas assumenda ab. Eveniet, aperiam consequuntur eos eius consectetur officiis beatae earum quo esse, nam fugiat, mollitia quibusdam quis ad a sapiente consequatur quaerat! Aperiam dolorem laborum harum inventore eos facilis voluptatibus aut distinctio? Aut vel, voluptates laudantium fugiat minima soluta cum libero nobis voluptas, facere facilis eos quasi, asperiores veritatis aliquid. Placeat similique facere ipsum, quaerat facilis, consectetur laudantium eius dolores perferendis fuga blanditiis ab voluptatem aliquid quas tenetur quod praesentium rerum expedita! Quas at mollitia sequi architecto alias possimus saepe placeat sint nemo, cupiditate impedit explicabo officiis tempore, quasi deleniti nostrum est ratione quibusdam assumenda temporibus omnis. Sequi, sapiente esse? Aut nam repudiandae amet eum illum beatae dolorum quos asperiores pariatur nulla incidunt quasi assumenda porro optio excepturi, minima, veritatis quibusdam, dicta accusantium explicabo iusto sapiente nihil maiores accusamus. Optio, consequuntur. Quae fugit ratione fuga sunt, ab iste, soluta pariatur exercitationem possimus, asperiores dolor libero quia minima. Ipsum nobis totam libero. Quidem vel blanditiis recusandae accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuaaccusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero 
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam possimus, neque, adipisci aperiam illo accusantium excepturi, maiores aspernatur repudiandae laboriosam expedita? Veritatis aut corporis nesciunt dolorem, incidunt exercitationem ad tempore! Hic cupiditate commodi ratione reiciendis facilis optio aliquam dolor ducimus. Eligendi fugit et, blanditiis provident sed dolore iusto exercitationem, ex dolor rem aspernatur nulla fugiat eos earum, facere doloribus aliquid a vel temporibus quidem maiores nisi molestiae doloremque hic. Repellat iste ad perspiciatis fuga! Cumque quas consequatur eligendi id laborum temporibus sed laudantium illo ex ipsam dolorum adipisci, accusamus mollitia corporis! Porro magnam laborum eius unde voluptatem, recusandae sit, dolorum qui deleniti voluptas voluptatibus tenetur molestiae quos harum ullam? Tempore aliquid minima quis animi eveniet possimus aliquam eius harum quia, quibusdam rem repudiandae molestiae labore praesentium. Necessitatibus, sed maxime. Cupiditate culpa sint dolor perspiciatis, id optio soluta fuga obcaecati suscipit ratione quaerat vitae itaque! Quibusdam possimus et repellat voluptatem culpa optio incidunt quisquam est earum corrupti nostrum amet beatae vel, atque quasi quaerat hic animi enim odit iste voluptas assumenda ab. Eveniet, aperiam consequuntur eos eius consectetur officiis beatae earum quo esse, nam fugiat, mollitia quibusdam quis ad a sapiente consequatur quaerat! Aperiam dolorem laborum harum inventore eos facilis voluptatibus aut distinctio? Aut vel, voluptates laudantium fugiat minima soluta cum libero nobis voluptas, facere facilis eos quasi, asperiores veritatis aliquid. Placeat similique facere ipsum, quaerat facilis, consectetur laudantium eius dolores perferendis fuga blanditiis ab voluptatem aliquid quas tenetur quod praesentium rerum expedita! Quas at mollitia sequi architecto alias possimus saepe placeat sint nemo, cupiditate impedit explicabo officiis tempore, quasi deleniti nostrum est ratione quibusdam assumenda temporibus omnis. Sequi, sapiente esse? Aut nam repudiandae amet eum illum beatae dolorum quos asperiores pariatur nulla incidunt quasi assumenda porro optio excepturi, minima, veritatis quibusdam, dicta accusantium explicabo iusto sapiente nihil maiores accusamus. Optio, consequuntur. Quae fugit ratione fuga sunt, ab iste, soluta pariatur exercitationem possimus, asperiores dolor libero quia minima. Ipsum nobis totam libero. Quidem vel blanditiis recusandae accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuaaccusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo fuga vero accusamus impedit, iste quo 
         </p>
       </div>
     </div>
@@ -57,30 +49,19 @@ export default {
 
 <style>
 .aboutMe--mainContent {
-  width: 100%;
+  width: 75%;
   height: 100vh;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
 }
 
-.aboutMe {
-  width: 100%;
-  max-height: 100vh;
-  display: flex;
-  justify-content: center;
-}
-
-.aboutMe--main,
-.aboutMe--image{
-  width: 35%;
-}
-
 .sectionsTittle--text {
+  max-height: 10vh;
   font-size: 3rem;
   color: #0E0E11;
-  line-height: 60px;
   text-shadow:
     -0.1vh -0.1vh 0 #8D8E91,  
     0.1vh -0.1vh 0 #8D8E91,
@@ -89,17 +70,39 @@ export default {
   flex-grow: 2;
 }
 
+.aboutMe {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.aboutMe--main,
+.aboutMe--image{
+  width: 40%;
+}
+
+.aboutMe--about {
+  display: flex;
+  align-items: center;
+}
+
+/* .aboutMe--image {
+  max-height: 50vh;
+} */
+
 .aboutMeContent--text {
-  font-size: 1.5rem;
+  font-size: 1.5vw;
   color: #fff;
 }
 
 .aboutMe--image__text {
+  max-height: 100%;
   margin: 0;
-  font-size: 1rem;
+  font-size: 1vw;
   line-height: 0.5rem;
   background: url("https://media-exp1.licdn.com/dms/image/C5603AQG7XDLKZRnUhw/profile-displayphoto-shrink_200_200/0/1618525230477?e=1636588800&v=beta&t=Nb23PR9jvlRiWlAqPUbLzKQBiKAGRgu9fCwkJZCBevw");
-  background-size: 20rem 20rem;
+  background-size: contain;
   background-clip: text;
   -webkit-background-clip: text;
   background-repeat: no-repeat;

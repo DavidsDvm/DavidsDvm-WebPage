@@ -5,21 +5,23 @@
         I'm <span class="bordered-text">David</span>,<br />
         Web Developer
     </div>
-    <Scrollwatcher sentinal-name="AboutMe" @on-intersection-element="scrolledOn()" />
+    <Scrollwatcher sentinal-name="homePage" @on-intersection-element="scrolledOn()" />
     <transition name="view" appear enter-active-class="animate__animated animate__backInLeft" leave-active-class="animate__animated animate__bounceOut">
     <div class="bigCenter-console">
-        <div class="font-card"></div>
-        <div class="console-card" @click="consoleFocus()">
-            <div class="console-absoluteElement" ref="consoleAbsoluteElement">
-                <div class="console">
-                    <div class="output" v-html="consoleOutput" ref="consoleData"></div>
-                    <div class="action" ref="consoleInputFocus">
-                        <span>dev@DavidsDvm$:  </span>
-                        <textarea class="input" name="input" cols="30" rows="1" @keydown.enter="submitConsole($event)" ref="consoleInput"></textarea>
+        <div class="bigCenter-console_main">
+            <div class="font-card"></div>
+            <div class="console-card" @click="consoleFocus()">
+                <div class="console-absoluteElement" ref="consoleAbsoluteElement">
+                    <div class="console">
+                        <div class="output" v-html="consoleOutput" ref="consoleData"></div>
+                        <div class="action" ref="consoleInputFocus">
+                            <span>dev@DavidsDvm$:  </span>
+                            <textarea class="input" name="input" cols="30" rows="1" @keydown.enter="submitConsole($event)" ref="consoleInput"></textarea>
+                        </div>
                     </div>
                 </div>
+                <!-- dev@DavidsDvm$: -->
             </div>
-            <!-- dev@DavidsDvm$: -->
         </div>
     </div>
     </transition>

@@ -1,9 +1,9 @@
 <template>
   <div class="contactMe--mainContent">
+    <div class="sectionsTittle--text">
+      >Contact Me
+    </div>
     <div class="contactMe">
-        <div class="sectionsTittle--text">
-            >Contact Me
-        </div>
         <div class="contactMe--main">
           <div class="text-white contactMe--main__bigText d-flex justify-content-center">
               Get in <span class="bordered-text">Touch</span>
@@ -50,7 +50,11 @@ export default {
 }
 
 .contactMe {
-  max-height: 100%;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .contactMe--main {
@@ -59,8 +63,7 @@ export default {
 
 .contactMe--main__bigText {
   width: 100%;
-  padding-top: 10%;
-  font-size: 6vh;
+  font-size: 6vw;
   text-shadow:
   -0.1vh -0.1vh 0 #000,  
   0.1vh -0.1vh 0 #000,
@@ -81,7 +84,6 @@ export default {
 .contactMe--descriptionText {
   width: 90%;
   text-align: center;
-  padding-top: 10%;
   margin: 0 auto;
   font-size: 1.3rem;
   color: #fff;
@@ -89,7 +91,6 @@ export default {
 
 .contactMe--Button {
   width: 100%;
-  padding-top: 10%;
   display: flex;
   justify-content: center;
 }
@@ -107,10 +108,5 @@ export default {
   color: #54555A;
   display: flex;
   justify-content: center;
-  padding-top: 10em;
 }
-
-/* .contactMe--disclamer span{
-  margin: 0 auto;
-} */
 </style>

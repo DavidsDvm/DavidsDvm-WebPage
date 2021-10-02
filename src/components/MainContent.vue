@@ -1,9 +1,9 @@
 <template>
   <div class="mainContentContainer">
-    <HomePage @actualActiveNav="aboutScroll($event)"/>
-    <AboutMe @actualActiveNav="aboutScroll($event)"/>
-    <Projects @actualActiveNav="aboutScroll($event)"/>
-    <ContactMe @actualActiveNav="aboutScroll($event)" />
+    <HomePage @actualActiveNav="aboutScroll($event)" class="mb-5"/>
+    <AboutMe @actualActiveNav="aboutScroll($event)" class="mt-5 mb-5"/>
+    <Projects @actualActiveNav="aboutScroll($event)" class="mt-5 mb-5"/>
+    <ContactMe @actualActiveNav="aboutScroll($event)" class="mt-5" />
   </div>
 </template>
 
@@ -25,6 +25,9 @@ export default {
     aboutScroll(element) {
       this.$emit('actuallySection', element);
     }  
+  },
+  mounted() {
+    document.title = 'DavidsDvm | Web Developer | @DavidsDvm'
   }
 }
 </script>
