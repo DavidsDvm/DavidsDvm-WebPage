@@ -1,26 +1,27 @@
 <template>
+  <transition name="view" appear enter-active-class="animate__animated animate__backInDown" leave-active-class="animate__animated animate__bounceOut">
   <div class="lateralBar d-flex flex-column flex-shrink-0 bg-dark__project">  
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
       <a href="/" class="nav-link py-3 mb-3 mt-2">
         <img src="../assets/img/personalLogo.png" alt="mdo" class="rounded-circle barIcons--tittle">
       </a>
       <li class="nav-item nav-item__above">
-        <div class="nav-link py-3 icon-active">
+        <div :class="navActive == 'home' ? 'icon-active' : ''" class="nav-link py-3">
           <ion-icon name="home-outline" class="barIcons"></ion-icon>
         </div>
       </li>
       <li class="nav-item nav-item__above">
-        <div class="nav-link py-3">
+        <div :class="navActive == 'about' ? 'icon-active' : ''" class="nav-link py-3">
           <ion-icon name="accessibility-outline" class="barIcons"></ion-icon>
         </div>
       </li>
      <li class="nav-item nav-item__above">
-        <div class="nav-link py-3">
+        <div :class="navActive == 'projects' ? 'icon-active' : ''" class="nav-link py-3">
           <ion-icon name="briefcase-outline" class="barIcons"></ion-icon>
         </div>
       </li>
       <li class="nav-item nav-item__above">
-        <div class="nav-link py-3">
+        <div :class="navActive == 'contact' ? 'icon-active' : ''" class="nav-link py-3">
           <ion-icon name="mail-outline" class="barIcons"></ion-icon>
         </div>
       </li>
@@ -43,8 +44,8 @@
         </div>
       </li>
     </ul>
-    
   </div>
+  </transition>
 </template>
 
 <script>
@@ -56,6 +57,12 @@ export default {
         isActive2 : false,
         isActive3 : false,
         errorClass : 'barIcons md hydrated'
+      }
+    },
+    props: {
+      navActive: {
+        type : String,
+        default : 'home'
       }
     }
 }
