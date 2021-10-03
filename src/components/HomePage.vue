@@ -1,5 +1,6 @@
 <template>
-  <div class="home-mainContent">
+  <div class="home-mainContent" id="homeMainContent">
+    <transition name="presentation" appear enter-active-class="animate__animated animate__backInRight" leave-active-class="animate__animated animate__bounceOut">
     <div class="text-white bigCenter-text">
         <div class="text-content">
             Hello!,<br />
@@ -7,8 +8,9 @@
             Web Developer
         </div>
     </div>
+    </transition>
     <Scrollwatcher sentinal-name="homePage" @on-intersection-element="scrolledOn()" />
-    <transition name="view" appear enter-active-class="animate__animated animate__backInLeft" leave-active-class="animate__animated animate__bounceOut">
+    <transition name="console" appear enter-active-class="animate__animated animate__backInLeft" leave-active-class="animate__animated animate__bounceOut">
     <div class="bigCenter-console">
         <div class="bigCenter-console_main">
             <div class="font-card"></div>
