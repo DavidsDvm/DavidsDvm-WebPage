@@ -123,4 +123,12 @@ export default {
 .bg-dark__project{
   background-color: #1B1C22;
 }
+
+@media (max-width: 680px) {
+  .lateralBar {
+    width: 0rem;
+    height: 0vh;
+  }
+
+}
 </style>

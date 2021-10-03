@@ -37,4 +37,10 @@ export default {
   width: 100%;
   padding-left: 4.6rem;
 }
+
+@media (max-width: 680px) {
+  .mainContentContainer {
+    padding-left: 0rem;
+  }
+}
 </style>

@@ -1,9 +1,11 @@
 <template>
   <div class="home-mainContent">
     <div class="text-white bigCenter-text">
-        Hello!,<br />
-        I'm <span class="bordered-text">David</span>,<br />
-        Web Developer
+        <div class="text-content">
+            Hello!,<br />
+            I'm <span class="bordered-text">David</span>,<br />
+            Web Developer
+        </div>
     </div>
     <Scrollwatcher sentinal-name="homePage" @on-intersection-element="scrolledOn()" />
     <transition name="view" appear enter-active-class="animate__animated animate__backInLeft" leave-active-class="animate__animated animate__bounceOut">

@@ -87,10 +87,6 @@ export default {
   align-items: center;
 }
 
-/* .aboutMe--image {
-  max-height: 50vh;
-} */
-
 .aboutMeContent--text {
   font-size: 1.5vw;
   color: #fff;
@@ -108,5 +104,43 @@ export default {
   background-repeat: no-repeat;
   -webkit-text-fill-color: rgba(27, 28, 34, 0);
   background-position: center;
+}
+
+@media (max-width: 680px) {
+  .aboutMe--main,
+  .aboutMe--image{
+    width: 100%;
+  }
+
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutMeContent--text {
+    font-size: 1.7vh;
+    color: #fff;
+  }
+
+  .aboutMe--image__text {
+    font-size: 0.8vh;
+    line-height: 0.3rem;
+  }
+  
+}
+
+@media (max-width: 950px) {
+  .aboutMe--mainContent{
+    height: 60vh;
+  }
+
+  .aboutMe--about,
+  .aboutMe--image {
+    max-height: 50vh;
+  }
+
+  .aboutMe {
+    height: 70vh;
+  }
 }
 </style>
