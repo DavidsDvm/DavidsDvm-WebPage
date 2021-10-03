@@ -1,9 +1,11 @@
 <template>
-  <div class="contactMe--mainContent">
+  <div class="contactMe--mainContent" id="contactMeMainContent">
     <div class="sectionsTittle--text">
       >Contact Me
     </div>
-    <div class="contactMe">
+    <Scrollwatcher sentinal-name="AboutMe" @on-intersection-element="scrolledOn()" />
+    <transition name="contact" enter-active-class="animate__animated animate__zoomInDown" leave-active-class="animate__animated animate__bounceOut">
+    <div v-if="contactMe" class="contactMe">
         <div class="contactMe--main">
           <div class="text-white contactMe--main__bigText d-flex justify-content-center">
               Get in <span class="bordered-text">Touch</span>
@@ -14,14 +16,14 @@
           inbox is always open. Whether you have a question or just want to
           say hi, I’ll try my best to get back to you!
         </div>
-        <Scrollwatcher sentinal-name="AboutMe" @on-intersection-element="scrolledOn()" />
         <div class="contactMe--Button">
-          <button>Contact Me</button>
+          <button @click="sendMail()">Contact Me</button>
         </div>
         <div class="contactMe--disclamer">
           <span>Made and designed with &lt;3 by @DavidsDvm</span>
         </div>
     </div>
+    </transition>
   </div>
 </template>
 
@@ -30,12 +32,21 @@ import Scrollwatcher from './ScrollWatcher';
 
 export default {
     name: 'ContactMe',
+    data(){
+      return{
+        contactMe : false
+      }
+    },
     components: {
       Scrollwatcher
     },
     methods: {
       scrolledOn() {
+        this.contactMe = true;
         this.$emit('actualActiveNav', 'contact');
+      },
+      sendMail() {
+        window.location.href = "mailto:davids.dvm@gmail.com?subject=Hello DavidsDvm i want to contact you";
       }
     }
 }
@@ -108,5 +119,17 @@ export default {
   color: #54555A;
   display: flex;
   justify-content: center;
+}
+
+@media (max-width: 680px) {
+  .contactMe--Button button {
+    width: 40vw;
+  }
+}
+
+@media (max-width: 950px) {
+  .contactMe--Button button {
+    width: 35vw;
+  }
 }
 </style>
