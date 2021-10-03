@@ -1,5 +1,5 @@
 <template>
-    <div class="Projects--mainContent">
+    <div class="Projects--mainContent" id="ProjectsMainContent">
         <div class="Projects-tittle">
             <div class="Projects--main">
                 <div class="sectionsTittle--text">
@@ -8,7 +8,8 @@
             </div>
         </div>
         <div class="Projects d-flex flex-column">
-            <div class="Projects--contentLeft">
+            <transition name="projectsLeft" enter-active-class="animate__animated animate__lightSpeedInRight" leave-active-class="animate__animated animate__bounceOut">
+            <div v-if="projectsLeft" class="Projects--contentLeft">
                 <div class="Projects--contentLeft__main">
                     <p class="Projects--contentLeft__main-text">Flowy</p>
                     <div class="Projects--contentLeft__main-description">
@@ -28,8 +29,10 @@
                     <img class="Projects--contentLeft__image" src="../assets/img/Project_Flowy.png" alt="Flowy Project Image">
                 </div>
             </div>
+            </transition>
             <Scrollwatcher sentinal-name="AboutMe" @on-intersection-element="scrolledOn()" />
-            <div class="Projects--contentRight">
+            <transition name="projectsRight" enter-active-class="animate__animated animate__lightSpeedInLeft" leave-active-class="animate__animated animate__bounceOut">
+            <div v-if="projectsRight" class="Projects--contentRight">
                 <div class="Projects--contentRight__main">
                     <p class="Projects--contentRight__main-text">Mascotas Olarte</p>
                     <div class="Projects--contentRight__main-description">
@@ -49,6 +52,7 @@
                     <img class="Projects--contentRight__image" src="../assets/img/Project_MascotasOlarte.png" alt="Flowy Project Image">
                 </div>
             </div>
+            </transition>
         </div>
     </div>
 </template>
@@ -58,11 +62,19 @@ import Scrollwatcher from './ScrollWatcher';
 
 export default {
     name: 'Projects',
+    data() {
+        return {
+            projectsRight : false,
+            projectsLeft: false
+        }
+    },
     components: {
       Scrollwatcher
     },
     methods: {
       scrolledOn() {
+        this.projectsRight = true;
+        this.projectsLeft = true;
         this.$emit('actualActiveNav', 'projects');
       }
     }
