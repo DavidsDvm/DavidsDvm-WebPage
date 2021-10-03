@@ -1,5 +1,5 @@
 <template>
-  <LateralBar :navActive="activeIndex" />
+  <LateralBar @scrollSection="ScrollToSection($event)" @socialMediaClick="socialMediaClick($event)" :navActive="activeIndex" />
   <MainContent @actuallySection="getActualScroll($event)" />
 </template>
 
@@ -15,13 +15,26 @@ export default {
   },
   data () {
     return {
-      activeIndex : 'home'
+      activeIndex : 'home',
+      socialMedia  : {
+        github : "https://github.com/DavidsDvm",
+        linkedin : "https://linkedin.com/in/davidsdvm/",
+        stackoverflow: "https://stackoverflow.com/users/16787643/davidsdvm"
+      }
     } 
   },
   methods: {
     getActualScroll(element) {
       this.activeIndex = element;
-    }  
+    },
+    socialMediaClick(element){
+      const avaliableSocialLink = this.socialMedia[element];
+      window.open(avaliableSocialLink, '_blank').focus();
+    },
+    ScrollToSection(element){
+      const containerScroll = this.$el.parentElement.querySelector(element);
+      containerScroll.scrollIntoView({behavior: 'smooth'});
+    }
   }
 }
 </script>
