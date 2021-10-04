@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-start Projects--contentRight__image">
-                    <img class="Projects--contentRight__image" src="../assets/img/Project_MascotasOlarte.png" alt="Flowy Project Image">
+                    <img class="Projects--contentRight__image" src="../assets/img/Project_MascotasOlarte.png" alt="Mascotas Olarte Project Image">
                 </div>
             </div>
             </transition>
