@@ -165,11 +165,11 @@
     }
 
     .Projects--contentLeft__image {
-        background-image: url('../../img/Project_Flowy.png');
+        background-image: url('../../img/Project_Flowy.webp');
     }
 
     .Projects--contentRight__image {
-        background-image: url('../../img/Project_MascotasOlarte.png');
+        background-image: url('../../img/Project_MascotasOlarte.webp');
     }
 
     .Projects--contentRight__image::before,

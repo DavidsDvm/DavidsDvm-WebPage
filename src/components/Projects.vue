@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-end Projects--contentLeft__image">
-                    <img class="Projects--contentLeft__image" src="../assets/img/Project_Flowy.png" alt="Flowy Project Image">
+                    <img class="Projects--contentLeft__image" src="../assets/img/Project_Flowy.webp" alt="Flowy Project Image">
                 </div>
             </div>
             </transition>
@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-start Projects--contentRight__image">
-                    <img class="Projects--contentRight__image" src="../assets/img/Project_MascotasOlarte.png" alt="Mascotas Olarte Project Image">
+                    <img class="Projects--contentRight__image" src="../assets/img/Project_MascotasOlarte.webp" alt="Mascotas Olarte Project Image">
                 </div>
             </div>
             </transition>

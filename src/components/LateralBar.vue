@@ -3,7 +3,7 @@
   <div class="lateralBar d-flex flex-column flex-shrink-0 bg-dark__project">  
     <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
       <a @mouseover="isActive4 = true" @mouseleave="isActive4 = false" :class="[{ 'animate__animated animate__flip' : isActive4 }]" href="/" class="nav-link py-3 mb-3 mt-2">
-        <img src="../assets/img/personalLogo.png" alt="mdo" class="rounded-circle barIcons--tittle">
+        <img src="../assets/img/personalLogo.webp" alt="mdo" class="rounded-circle barIcons--tittle">
       </a>
       <li @mouseover="isActive5 = true" @mouseleave="isActive5 = false" :class="[{ 'animate__animated animate__jello' : isActive5 }]" class="nav-item nav-item__above">
         <div @click="scrollSection('home')" :class="navActive == 'home' ? 'icon-active' : ''" class="nav-link py-3">

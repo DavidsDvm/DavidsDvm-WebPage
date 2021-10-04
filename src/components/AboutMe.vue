@@ -110,7 +110,7 @@ export default {
   margin: 0;
   font-size: 1vw;
   line-height: 0.5rem;
-  background: url("https://media-exp1.licdn.com/dms/image/C5603AQG7XDLKZRnUhw/profile-displayphoto-shrink_200_200/0/1618525230477?e=1636588800&v=beta&t=Nb23PR9jvlRiWlAqPUbLzKQBiKAGRgu9fCwkJZCBevw");
+  background: url("../assets/img/personalPhoto.webp");
   background-size: contain;
   background-clip: text;
   -webkit-background-clip: text;
