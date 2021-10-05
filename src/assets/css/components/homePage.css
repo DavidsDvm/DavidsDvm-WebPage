@@ -138,6 +138,10 @@
     0.1vh 0.1vh 0 #fff;
 }
 
+.text-content .text-content_container span {
+	display: inline-block;
+}
+
 .bigCenter-console {
     width: 45%;
 	height: 50%;
