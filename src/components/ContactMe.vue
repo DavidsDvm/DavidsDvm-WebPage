@@ -12,9 +12,9 @@
           </div>
         </div>
         <div class="contactMe--descriptionText">
-          Although I’m not currently looking for any new opportunities, my
-          inbox is always open. Whether you have a question or just want to
-          say hi, I’ll try my best to get back to you!
+          My inbox is always open to new collaboration or projects
+          press the below button and send me a message, I'll wait
+          for your message.
         </div>
         <div class="contactMe--Button">
           <button @click="sendMail()">Contact Me</button>

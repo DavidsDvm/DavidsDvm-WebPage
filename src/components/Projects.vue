@@ -14,15 +14,16 @@
                     <p class="Projects--contentLeft__main-text">Flowy</p>
                     <div class="Projects--contentLeft__main-description">
                         <span>
-                            This is a proyect based on the selling of the national flowers to the <br>
-                            global public - this proyect will be develop using JavaScript - <br>
-                            Python.
+                            E-commerce project, this projects is based on the
+                            little offert of online sites to buy flowers on
+                            LATAM countries, project made using Flask, MariaDB
+                            JavaScript
                         </span>
                     </div>
                     <div class="Projects--contentLeft__main-social">
-                        <ion-icon name="link-outline"></ion-icon>
-                        <ion-icon name="document-outline"></ion-icon>
-                        <ion-icon name="logo-octocat"></ion-icon>
+                        <ion-icon @click="projectClick('linkFlowy')" name="link-outline"></ion-icon>
+                        <ion-icon @click="projectClick('documentFlowy')" name="document-outline"></ion-icon>
+                        <ion-icon @click="projectClick('githubFlowy')" name="logo-octocat"></ion-icon>
                     </div>
                 </div>
                 <div class="d-flex justify-content-end Projects--contentLeft__image">
@@ -37,15 +38,15 @@
                     <p class="Projects--contentRight__main-text">Mascotas Olarte</p>
                     <div class="Projects--contentRight__main-description">
                         <span>
-                            This is a full web page of the medical veterinary center "Mascotas
-                            Olarte" this proyect have a full desing using PHP - HTML5 - CSS3
-                            - MySql - JavaScript - Boostrap 
+                            Web Information System for the veterinarian center
+                            "Mascotas Olarte" using HTML5, CSS3, Bootstrap, PHP,
+                            MySQL; You can check the full project on the below GitHub repository
                         </span>
                     </div>
                     <div class="Projects--contentRight__main-social">
-                        <ion-icon name="logo-octocat"></ion-icon>
-                        <ion-icon name="document-outline"></ion-icon>
-                        <ion-icon name="link-outline"></ion-icon>
+                        <ion-icon @click="projectClick('githubMascotas')" name="logo-octocat"></ion-icon>
+                        <ion-icon @click="projectClick('documentMascotas')" name="document-outline"></ion-icon>
+                        <ion-icon @click="projectClick('linkMascotas')" name="link-outline"></ion-icon>
                     </div>
                 </div>
                 <div class="d-flex justify-content-start Projects--contentRight__image">
@@ -65,7 +66,15 @@ export default {
     data() {
         return {
             projectsRight : false,
-            projectsLeft: false
+            projectsLeft : false,
+            projectsLinks : {
+                linkFlowy : "https://davidsdvm.github.io/Flowy/",
+                documentFlowy : "https://github.com/DavidsDvm/Flowy/blob/main/docs/Documentacion_Sistema%20de%20Gesti%C3%B3n%20de%20Ventas%20en%20la%20Industria%20Floricultora_FLOWY.docx",
+                githubFlowy : "https://github.com/DavidsDvm/Flowy",
+                linkMascotas : "https://davidsdvm.github.io/MascotasOlarte/",
+                documentMascotas : "https://github.com/DavidsDvm/MascotasOlarte/blob/main/docs/Mascotas_Olarte_Planeacion_Proyecto.docx",
+                githubMascotas: "https://github.com/DavidsDvm/MascotasOlarte"
+            }
         }
     },
     components: {
@@ -76,6 +85,10 @@ export default {
         this.projectsRight = true;
         this.projectsLeft = true;
         this.$emit('actualActiveNav', 'projects');
+      },
+      projectClick(element) {
+        const avaliableProjectLink = this.projectsLinks[element];
+        window.open(avaliableProjectLink, '_blank').focus();
       }
     }
 }
