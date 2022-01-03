@@ -1,7 +1,7 @@
 .Projects--mainContent {
     margin: 0 auto 0 auto;
     width: 75%;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .Projects-tittle {
@@ -15,7 +15,7 @@
 
 .Projects--contentLeft,
 .Projects--contentRight {
-    height: 50%;
+    height: 50vh;
     width: 100%;
     padding-top: 4.5vh;
     display: flex;
@@ -108,6 +108,11 @@
     margin-left: auto;
 }
 
+.Projects--contentRight__main-description span,
+.Projects--contentLeft__main-description span {
+    padding: 0 1vw;
+}
+
 .Projects--contentLeft__main-social {
     padding-top: 1em;
     width: 20%;
@@ -134,11 +139,16 @@
 }
 
 @media (max-width: 680px) {
+    .Projects--contentRight,
+    .Projects--contentLeft {
+        height: 40vh;
+    }
+
     .Projects--contentLeft__image,
     .Projects--contentRight__image {
         margin: 0;
     }
-
+    
     .Projects--contentLeft__main,
     .Projects--contentRight__main{
         width: 100%;
@@ -169,11 +179,15 @@
         position: relative;
     }
 
-    .Projects--contentLeft__image {
+    .Projects--Floowy__image {
         background-image: url('../../img/Project_Flowy.webp');
     }
 
-    .Projects--contentRight__image {
+    .Projects--Mediflow__image {
+        background-image: url('../../img/Project_Mediflow.webp');
+    }
+
+    .Projects--Mascotas__image {
         background-image: url('../../img/Project_MascotasOlarte.webp');
     }
 
