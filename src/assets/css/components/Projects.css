@@ -141,7 +141,7 @@
 @media (max-width: 680px) {
     .Projects--contentRight,
     .Projects--contentLeft {
-        height: 40vh;
+        min-height: 40vh;
     }
 
     .Projects--contentLeft__image,
@@ -180,7 +180,7 @@
     }
 
     .Projects--Floowy__image {
-        background-image: url('../../img/Project_Flowy.webp');
+        background-image: url('../../img/Project_Floowy.webp');
     }
 
     .Projects--Mediflow__image {

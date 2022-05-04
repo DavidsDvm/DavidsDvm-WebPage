@@ -27,7 +27,7 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-end Projects--contentLeft__image Projects--Floowy__image">
-                    <img class="Projects--contentLeft__image" src="../assets/img/Project_Flowy.webp" alt="Flowy Project Image">
+                    <img class="Projects--contentLeft__image" src="../assets/img/Project_Floowy.webp" alt="Flowy Project Image">
                 </div>
             </div>
             </transition>
