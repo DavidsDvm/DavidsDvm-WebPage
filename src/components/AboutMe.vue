@@ -145,7 +145,7 @@ export default {
 
 @media (max-width: 950px) {
   .aboutMe--mainContent{
-    height: 60vh;
+    height: 100vh;
   }
 
   .aboutMe--about,
