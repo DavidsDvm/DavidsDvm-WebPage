@@ -1,6 +1,6 @@
 <template>
   <div class="contactMe--mainContent" id="contactMeMainContent">
-    <div class="sectionsTittle--text">
+    <div class="sectionsTittle--text__contactMe">
       >Contact Me
     </div>
     <Scrollwatcher sentinal-name="AboutMe" @on-intersection-element="scrolledOn()" />
@@ -53,6 +53,14 @@ export default {
 </script>
 
 <style>
+.sectionsTittle--text__contactMe {
+	max-height: 10vh;
+	font-size: 3rem;
+	color: #0E0E11;
+	text-shadow: -0.1vh -0.1vh 0 #8D8E91, 0.1vh -0.1vh 0 #8D8E91, -0.1vh 0.1vh 0 #8D8E91, 0.1vh 0.1vh 0 #8D8E91;
+	flex-grow: 2;
+}
+
 .contactMe--mainContent {
   margin: 0 auto 0 auto;
   padding-top: 1em;
@@ -128,6 +136,10 @@ export default {
 }
 
 @media (max-width: 950px) {
+  .sectionsTittle--text__contactMe {
+    font-size: 2.5rem;
+  }
+
   .contactMe--Button button {
     width: 35vw;
   }
