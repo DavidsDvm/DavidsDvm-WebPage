@@ -251,6 +251,7 @@
 }
 
 span.seperator {
+	white-space: nowrap;
 	font-size: 12px;
 	animation: changeColor 10s ease-in-out infinite;
 }
