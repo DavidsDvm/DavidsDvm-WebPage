@@ -1,8 +1,8 @@
 <template>
   <transition name="view" appear enter-active-class="animate__animated animate__backInDown" leave-active-class="animate__animated animate__bounceOut">
   <div class="lateralBar d-flex flex-column flex-shrink-0 bg-dark__project">  
-    <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
-      <a @mouseover="isActive4 = true" @mouseleave="isActive4 = false" :class="[{ 'animate__animated animate__flip' : isActive4 }]" href="/" class="nav-link py-3 mb-3 mt-2">
+    <ul class="nav-custom nav nav-pills nav-flush flex-column mb-auto text-center">
+      <a @mouseover="isActive4 = true" @mouseleave="isActive4 = false" :class="[{ 'animate__animated animate__flip' : isActive4 }]" href="/" class="nav-link nav-item__logo py-3 mb-3 mt-2">
         <img src="../assets/img/personalLogo.webp" alt="mdo" class="rounded-circle barIcons--tittle">
       </a>
       <li @mouseover="isActive5 = true" @mouseleave="isActive5 = false" :class="[{ 'animate__animated animate__jello' : isActive5 }]" class="nav-item nav-item__above">
@@ -29,17 +29,17 @@
 
     <ul class="nav nav-pills nav-flush flex-column text-center mb-4">
       <li class="nav-item nav-item__below">
-        <div class="nav-link py-3">
+        <div class="nav-link my-3">
           <ion-icon @click="socialMedia('github')" @mouseover="isActive1 = true" @mouseleave="isActive1 = false" :class="[{ 'animate__animated animate__heartBeat' : isActive1 }, errorClass]" name="logo-github"></ion-icon>
         </div>
       </li>
       <li class="nav-item nav-item__below">
-        <div class="nav-link py-3">
+        <div class="nav-link my-3">
           <ion-icon @click="socialMedia('linkedin')" @mouseover="isActive2 = true" @mouseleave="isActive2 = false" :class="[{ 'animate__animated animate__heartBeat' : isActive2 }, errorClass]" name="logo-linkedin"></ion-icon>
         </div>
       </li>
       <li class="nav-item nav-item__below">
-        <div class="nav-link py-3">
+        <div class="nav-link my-3">
           <ion-icon @click="socialMedia('stackoverflow')" @mouseover="isActive3 = true" @mouseleave="isActive3 = false" :class="[{ 'animate__animated animate__heartBeat' : isActive3 }, errorClass]" name="logo-stackoverflow"></ion-icon>
         </div>
       </li>
@@ -104,26 +104,39 @@ export default {
   box-shadow:         inset -1.5px 0px 0px rgba(255, 255, 255, 0.15);
 }
 
+.nav-custom {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+.nav-item__logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .barIcons--tittle {
   width: 5vh;
   height: 5vh;
 }
 
 .barIcons {
-  width: 3vh;
-  height: 3vh;
+  width: 2rem;
+  height: 2rem;
   color: #8D8E91;
 }
 
 .nav-item__above {
-  height: 4rem;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .nav-item__below {
-  height: 2rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -131,8 +144,8 @@ export default {
 
 .icon-active {
   padding: 0 !important;
-  width: 6vh;
-  height: 6vh;
+  width: 100%;
+  height: 4rem;
   background: #38393E !important;
   border-radius: 1.2vh !important;
   display: flex;
