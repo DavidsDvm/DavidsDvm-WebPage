@@ -64,6 +64,27 @@ const i18n = createI18n({
             description:
               'As a Back-End Developer at Go Bravo, my role involved enhancing application infrastructure and internal software architecture. I developed back-end services using Java Spring Boot and automated processes with Python scripting. Additionally, I contributed to front-end projects with Angular and participated in various software lifecycle tasks such as integration testing and continuous deployment.',
           },
+          third: {
+            title: 'Backend Developer',
+            date: 'Oct 22 - May 23',
+            company: 'Wayru',
+            description:
+              'My responsibilities included developing back-end systems for various projects and ensuring seamless integration with the front-end team. I gained extensive experience in a variety of technologies and mobile app development, while continually expanding my knowledge in blockchain and smart contract implementation.',
+          },
+          fourth: {
+            title: 'Full Stack Developer',
+            date: 'Jul 22 - May 23',
+            company: 'JAH insurance brokers corp',
+            description:
+              'As a Full Stack Developer, I worked on a project for Pacific Real Estate where I was responsible for the entire development process, from planning to deployment. The project included two pages, the main page of the project, and a platform to manage properties, user commissions, and files.',
+          },
+          fifth: {
+            title: 'Junior Software Developer',
+            date: 'Dec 21 - Jun 22',
+            company: 'Mi.com.co',
+            description:
+              'During this role, I gained experience in software development methodologies, version control tools such as Git, and working in an agile team environment. I also developed skills in debugging, testing and troubleshooting complex systems, and in collaborating with team members to achieve project goals.',
+          }
         }
       },
       projects: {
@@ -148,6 +169,27 @@ const i18n = createI18n({
             description:
               'Como Desarrollador Back-End en Go Bravo, mi rol implicaba mejorar la infraestructura de la aplicación y la arquitectura interna del software. Desarrollé servicios back-end utilizando Java Spring Boot y automatice procesos con scripts de Python. Además, contribuí en proyectos front-end con Angular y participé en diversas tareas del ciclo de vida del software como pruebas de integración y despliegue continuo.',
           },
+          third: {
+            title: 'Desarrollador Backend',
+            date: 'Oct 22 - May 23',
+            company: 'Wayru',
+            description:
+              'Mis responsabilidades incluían desarrollar sistemas back-end para diversos proyectos y garantizar una integración perfecta con el equipo de front-end. Adquirí una amplia experiencia en una variedad de tecnologías y desarrollo de aplicaciones móviles, mientras expandía continuamente mi conocimiento en blockchain e implementación de contratos inteligentes.',
+          },
+          fourth: {
+            title: 'Desarrollador Full Stack',
+            date: 'Jul 22 - May 23',
+            company: 'JAH insurance brokers corp',
+            description:
+              'Como Desarrollador Full Stack, trabajé en un proyecto para Pacific Real Estate donde fui responsable de todo el proceso de desarrollo, desde la planificación hasta la implementación. El proyecto incluía dos páginas, la página principal del proyecto y una plataforma para gestionar propiedades, comisiones de usuarios y archivos.',
+          },
+          fifth: {
+            title: 'Desarrollador de Software Junior',
+            date: 'Dic 21 - Jun 22',
+            company: 'Mi.com.co',
+            description:
+              'Durante este rol, adquirí experiencia en metodologías de desarrollo de software, herramientas de control de versiones como Git y trabajo en un entorno de equipo ágil. También desarrollé habilidades en depuración, pruebas y resolución de problemas de sistemas complejos, y en colaborar con miembros del equipo para alcanzar los objetivos del proyecto.',
+          }
         }
       },
       projects: {

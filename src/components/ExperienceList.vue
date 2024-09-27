@@ -40,6 +40,24 @@ export default {
           company: this.$t('experience.jobs.second.company'),
           description: this.$t('experience.jobs.second.description'),
         },
+        {
+          title: this.$t('experience.jobs.third.title'),
+          date: this.$t('experience.jobs.third.date'),
+          company: this.$t('experience.jobs.third.company'),
+          description: this.$t('experience.jobs.third.description'),
+        },
+        {
+          title: this.$t('experience.jobs.fourth.title'),
+          date: this.$t('experience.jobs.fourth.date'),
+          company: this.$t('experience.jobs.fourth.company'),
+          description: this.$t('experience.jobs.fourth.description'),
+        },
+        {
+          title: this.$t('experience.jobs.fifth.title'),
+          date: this.$t('experience.jobs.fifth.date'),
+          company: this.$t('experience.jobs.fifth.company'),
+          description: this.$t('experience.jobs.fifth.description'),
+        }
       ],
     };
   },
@@ -65,6 +83,24 @@ export default {
           company: this.$t('experience.jobs.second.company'),
           description: this.$t('experience.jobs.second.description'),
         },
+        {
+          title: this.$t('experience.jobs.third.title'),
+          date: this.$t('experience.jobs.third.date'),
+          company: this.$t('experience.jobs.third.company'),
+          description: this.$t('experience.jobs.third.description'),
+        },
+        {
+          title: this.$t('experience.jobs.fourth.title'),
+          date: this.$t('experience.jobs.fourth.date'),
+          company: this.$t('experience.jobs.fourth.company'),
+          description: this.$t('experience.jobs.fourth.description'),
+        },
+        {
+          title: this.$t('experience.jobs.fifth.title'),
+          date: this.$t('experience.jobs.fifth.date'),
+          company: this.$t('experience.jobs.fifth.company'),
+          description: this.$t('experience.jobs.fifth.description'),
+        }
       ];
     },
   },
