@@ -142,7 +142,7 @@ export default {
     consoleOutput: function () {
       switch (this.consoleValue) {
         case "":
-          return `<span>Initializing...</span><br/>
+          return `<span>${this.$t('home.terminal.initializing')}</span><br/>
                     <span class="green">0.005ms ok!</span><br/>
                     <span class="seperator">== == == == == == == == == == == == == == == == == ==</span><br>
                     <pre contenteditable="false"> _______                     __       __          _______                         
@@ -155,15 +155,15 @@ $$ |__$$ /$$$$$$$ | $$ $$/  $$ $$ \__$$ |$$$$$$  $$ |__$$ | $$ $$/  $$ | $$ | $$
 $$    $$/$$    $$ |  $$$/   $$ $$    $$ /     $$/$$    $$/   $$$/   $$ | $$ | $$ |
 $$$$$$$/  $$$$$$$/    $/    $$/ $$$$$$$/$$$$$$$/ $$$$$$$/     $/    $$/  $$/  $$/ </pre>
                     <span class="seperator">== == == == == == == == == == == == == == == == == ==</span><br>
-                    <span>Hope you have fun discovering all the <span class="red">hidden gems</span>!</span>
+                    <span>${this.$t('home.terminal.hidden')}</span>
                     <br>
-                    <span class="blue">type '<span class="grey">help</span>' to see a list of comands available <br/> or '<span class="grey">contact</span>' for a list of ways to contact me.</span><br />
+                    <span class="blue">${this.$t('home.terminal.type')} '<span class="grey">help</span>' ${this.$t('home.terminal.avalaibleCommands')} <br/> or '<span class="grey">contact</span>' ${this.$t('home.terminal.contactCommand')}</span><br />
                     <span class="seperator">== == == == == == == == == == == == == == == == == ==</span><br>`
         case 'clear':
           return ``
 
         case 'help':
-          var commandsArray = ['Help: List of available commands',
+          var commandsArray = [this.$t('home.terminal.helpText'),
             '>help',
             '>about',
             '>contact',
@@ -207,10 +207,10 @@ $$$$$$$/  $$$$$$$/    $/    $$/ $$$$$$$/$$$$$$$/ $$$$$$$/     $/    $$/  $$/  $$
           return (allText)
 
         case 'about':
-          var aboutMeArray = ['>About:',
-            'Hi There!',
-            'I\'m David, better known as \'DavidsDvm\' I am more than a robot coding 🤖, I am a real human trying to learn new things and develop incredible projects with ❤️ meeting incredible people on the wayrocket',
-            'Feel free to follow me on GitHub @DavidsDvm - see contacts page.'];
+          var aboutMeArray = [`>${this.$t('aboutMe.title')}:`,
+            this.$t('home.terminal.about.one'),
+            this.$t('home.terminal.about.two'),
+            this.$t('home.terminal.about.three')];
           var allText = this.$refs.consoleData.innerHTML;
 
           for (var i = 0; i < aboutMeArray.length; i++) {

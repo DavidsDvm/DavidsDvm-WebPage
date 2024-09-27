@@ -17,6 +17,20 @@ const i18n = createI18n({
         welcomeTwo: "I'm ",
         welcomeThree: 'David',
         welcomeFour: 'Web Developer',
+        terminal: {
+          initializing: 'Initializing...',
+          hidden: 'Hope you have fun discovering all the <span class="red">hidden gems</span>!',
+          avalaibleCommands: 'to see a list of comands available',
+          type: 'type',
+          contactCommand: 'for a list of ways to contact me.',
+          helpText: 'Help: List of available commands',
+          about: {
+            one: 'Hi There!',
+            two: 'I\'m David, better known as \'DavidsDvm\' I am more than a robot coding 🤖, I am a real human trying to learn new things and develop incredible projects with ❤️ meeting incredible people on the wayrocket',
+            three: 'Feel free to follow me on GitHub @DavidsDvm - see contacts page.'
+          }
+        },
+        languageNotice: "<=== You can always change the language of the site"
       },
       aboutMe: {
         title: 'About Me',
@@ -122,6 +136,20 @@ const i18n = createI18n({
         welcomeTwo: 'Soy ',
         welcomeThree: 'David',
         welcomeFour: 'Desarrollador web',
+        terminal: {
+          initializing: 'Inicializando...',
+          hidden: '¡Espero que te diviertas descubriendo todas las <span class="red">joyas ocultas</span>!',
+          avalaibleCommands: 'para ver una lista de comandos disponibles',
+          type: 'escribe',
+          contactCommand: 'para ver una lista de formas de contactarme.',
+          helpText: 'Ayuda: Lista de comandos disponibles',
+          about: {
+            one: '¡Hola!',
+            two: 'Soy David, mejor conocido como \'DavidsDvm\' Soy más que un robot programando 🤖, soy un humano real tratando de aprender cosas nuevas y desarrollar proyectos increíbles con ❤️ conociendo personas increíbles en el camino',
+            three: 'Siéntete libre de seguirme en GitHub @DavidsDvm - mira la seccion de contacto.'
+          }
+        },
+        languageNotice: "<=== Siempre puedes cambiar el idioma del sitio"
       },
       aboutMe: {
         title: 'Sobre Mí',

@@ -11,7 +11,7 @@ export default {
   name: 'App',
   components: {
     LateralBar,
-    MainContent
+    MainContent,
   },
   data () {
     return {
