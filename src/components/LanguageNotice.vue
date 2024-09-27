@@ -51,4 +51,11 @@ button {
   cursor: pointer;
   margin-left: 10px;
 }
+
+/* dont show if is mobile */
+@media (max-width: 768px) {
+  .language-notice {
+    display: none;
+  }
+}
 </style>
