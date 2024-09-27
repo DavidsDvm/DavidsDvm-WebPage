@@ -1,24 +1,26 @@
 <template>
   <div class="contactMe--mainContent" id="contactMeMainContent">
     <div class="sectionsTittle--text__contactMe">
-      >{{ $t('contactMe.title') }}
+      >Contact Me
     </div>
     <Scrollwatcher sentinal-name="AboutMe" @on-intersection-element="scrolledOn()" />
     <transition name="contact" enter-active-class="animate__animated animate__zoomInDown" leave-active-class="animate__animated animate__bounceOut">
     <div v-if="contactMe" class="contactMe">
         <div class="contactMe--main">
           <div class="text-white contactMe--main__bigText d-flex justify-content-center">
-            {{ $t('contactMe.bigtextOne') }} <span class="bordered-text">{{ $t('contactMe.bigtextTwo') }}</span>
+              Get in <span class="bordered-text">Touch</span>
           </div>
         </div>
         <div class="contactMe--descriptionText">
-          {{ $t('contactMe.description') }}
+          My inbox is always open to new collaboration or projects
+          press the below button and send me a message, I'll wait
+          for your message.
         </div>
         <div class="contactMe--Button">
-          <button @click="sendMail()">{{ $t('contactMe.buttonText') }}</button>
+          <button @click="sendMail()">Contact Me</button>
         </div>
         <div class="contactMe--disclamer">
-          <span>{{ $t('contactMe.disclaimer') }}</span>
+          <span>Made and designed with &lt;3 by @DavidsDvm</span>
         </div>
     </div>
     </transition>
@@ -82,7 +84,7 @@ export default {
   width: 100%;
   font-size: 6vw;
   text-shadow:
-  -0.1vh -0.1vh 0 #000,
+  -0.1vh -0.1vh 0 #000,  
   0.1vh -0.1vh 0 #000,
   -0.1vh 0.1vh 0 #000,
   0.1vh 0.1vh 0 #000;
@@ -92,7 +94,7 @@ export default {
   margin: 0;
   color: #000;
   text-shadow:
-  -0.1vh -0.1vh 0 #fff,
+  -0.1vh -0.1vh 0 #fff,  
   0.1vh -0.1vh 0 #fff,
   -0.1vh 0.1vh 0 #fff,
   0.1vh 0.1vh 0 #fff;
