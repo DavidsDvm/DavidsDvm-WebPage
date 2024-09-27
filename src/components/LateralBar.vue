@@ -1,6 +1,6 @@
 <template>
   <transition name="view" appear enter-active-class="animate__animated animate__backInDown" leave-active-class="animate__animated animate__bounceOut">
-  <div class="lateralBar d-flex flex-column flex-shrink-0 bg-dark__project">
+  <div class="lateralBar d-flex flex-column flex-shrink-0 bg-dark__project">  
     <ul class="nav-custom nav nav-pills nav-flush flex-column mb-auto text-center">
       <a @mouseover="isActive4 = true" @mouseleave="isActive4 = false" :class="[{ 'animate__animated animate__flip' : isActive4 }]" href="/" class="nav-link nav-item__logo py-3 mb-3 mt-2">
         <img src="../assets/img/personalLogo.webp" alt="mdo" class="rounded-circle barIcons--tittle">
@@ -15,17 +15,12 @@
           <ion-icon name="accessibility-outline" class="barIcons"></ion-icon>
         </div>
       </li>
-      <li @mouseover="isActive7 = true" @mouseleave="isActive7 = false" :class="[{ 'animate__animated animate__jello' : isActive7 }]" class="nav-item nav-item__above">
-        <div @click="scrollSection('experience')" :class="navActive == 'experience' ? 'icon-active' : ''" class="nav-link py-3">
+     <li @mouseover="isActive7 = true" @mouseleave="isActive7 = false" :class="[{ 'animate__animated animate__jello' : isActive7 }]" class="nav-item nav-item__above">
+        <div @click="scrollSection('projects')" :class="navActive == 'projects' ? 'icon-active' : ''" class="nav-link py-3">
           <ion-icon name="briefcase-outline" class="barIcons"></ion-icon>
         </div>
       </li>
-     <li @mouseover="isActive8 = true" @mouseleave="isActive8 = false" :class="[{ 'animate__animated animate__jello' : isActive8 }]" class="nav-item nav-item__above">
-        <div @click="scrollSection('projects')" :class="navActive == 'projects' ? 'icon-active' : ''" class="nav-link py-3">
-          <ion-icon name="code-outline" class="barIcons"></ion-icon>
-        </div>
-      </li>
-      <li @mouseover="isActive9 = true" @mouseleave="isActive9 = false" :class="[{ 'animate__animated animate__jello' : isActive9 }]" class="nav-item nav-item__above">
+      <li @mouseover="isActive8 = true" @mouseleave="isActive8 = false" :class="[{ 'animate__animated animate__jello' : isActive8 }]" class="nav-item nav-item__above">
         <div @click="scrollSection('contact')" :class="navActive == 'contact' ? 'icon-active' : ''" class="nav-link py-3">
           <ion-icon name="mail-outline" class="barIcons"></ion-icon>
         </div>
@@ -45,7 +40,7 @@
       </li>
       <li class="nav-item nav-item__below">
         <div class="nav-link my-3">
-          <ion-icon @click="changeLangue()" @mouseover="isActive3 = true" @mouseleave="isActive3 = false" :class="[{ 'animate__animated animate__heartBeat' : isActive3 }, errorClass]" name="language-outline"></ion-icon>
+          <ion-icon @click="socialMedia('stackoverflow')" @mouseover="isActive3 = true" @mouseleave="isActive3 = false" :class="[{ 'animate__animated animate__heartBeat' : isActive3 }, errorClass]" name="logo-stackoverflow"></ion-icon>
         </div>
       </li>
     </ul>
@@ -66,12 +61,10 @@ export default {
         isActive6 : false,
         isActive7 : false,
         isActive8 : false,
-        isActive9 : false,
         errorClass : 'barIcons md hydrated',
         sectionsNames : {
           home : "homeMainContent",
           about : "aboutMeMainContent",
-          experience : "experienceMainContent",
           projects : "ProjectsMainContent",
           contact : "contactMeMainContent"
         }
@@ -90,14 +83,6 @@ export default {
       scrollSection(element) {
         const sectionNameID = '#' + this.sectionsNames[element];
         this.$emit('scrollSection', sectionNameID);
-      },
-      changeLangue(){
-        const lang = this.$i18n.locale;
-        if(lang == 'en'){
-          this.$i18n.locale = 'es';
-        }else{
-          this.$i18n.locale = 'en';
-        }
       }
     }
 }
