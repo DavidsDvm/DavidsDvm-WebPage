@@ -3,11 +3,21 @@ import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import './assets/css/index.css'
 
+const browserLanguage = navigator.language.split('-')[0]; // Get the primary language code ('en', 'es', etc.)
+const availableLanguages = ['en', 'es'];
+const defaultLanguage = availableLanguages.includes(browserLanguage) ? browserLanguage : 'en'; // Fallback to English if the browser language isn't supported
+
 const i18n = createI18n({
-  locale: 'en',
-  fallbackLocale: 'es',
+  locale: defaultLanguage,
+  fallbackLocale: 'en',
   messages: {
     en: {
+      home: {
+        welcomeOne: 'Hello!,',
+        welcomeTwo: "I'm ",
+        welcomeThree: 'David',
+        welcomeFour: 'Web Developer',
+      },
       aboutMe: {
         title: 'About Me',
         descriptionOne: `Hello! My name is David and I enjoy creating
@@ -86,6 +96,12 @@ const i18n = createI18n({
       }
     },
     es: {
+      home: {
+        welcomeOne: 'Hola!,',
+        welcomeTwo: 'Soy ',
+        welcomeThree: 'David',
+        welcomeFour: 'Desarrollador web',
+      },
       aboutMe: {
         title: 'Sobre Mí',
         descriptionOne: `¡Hola! Mi nombre es David y disfruto creando
@@ -105,7 +121,7 @@ const i18n = createI18n({
       },
       contactMe: {
         title: 'Contáctame',
-        bigtextOne: 'Ponte en',
+        bigtextOne: 'Ponte en ',
         bigtextTwo: 'Contacto',
         description: `Mi bandeja de entrada siempre está abierta para nuevas colaboraciones o proyectos
           presiona el botón de abajo y envíame un mensaje, esperaré

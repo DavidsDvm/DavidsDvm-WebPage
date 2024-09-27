@@ -78,4 +78,11 @@ export default {
 .no-bullets {
   list-style-type: none;
 }
+
+/* remove ul padding on small devices */
+@media (max-width: 680px) {
+  .relative {
+    padding-left: 0;
+  }
+}
 </style>

@@ -5,70 +5,37 @@
       <div class="text-white bigCenter-text">
         <div class="text-content">
           <span class="text-content_container">
-            <span @mouseover="textActive1 = true" @mouseleave="textActive1 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive1 }]">H</span>
-            <span @mouseover="textActive2 = true" @mouseleave="textActive2 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive2 }]">e</span>
-            <span @mouseover="textActive3 = true" @mouseleave="textActive3 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive3 }]">l</span>
-            <span @mouseover="textActive4 = true" @mouseleave="textActive4 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive4 }]">l</span>
-            <span @mouseover="textActive5 = true" @mouseleave="textActive5 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive5 }]">o</span>
-            <span @mouseover="textActive6 = true" @mouseleave="textActive6 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive6 }]">!</span>
-            <span @mouseover="textActive7 = true" @mouseleave="textActive7 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive7 }]">,</span>
+            <span v-for="(char, index) in welcomeOne" :key="index"
+                  @mouseover="setActive(index)" @mouseleave="setInactive(index)"
+                  :class="[{ 'animate__animated animate__headShake': activeTexts[index] }]">
+              {{ char === ' ' ? '\u00A0' : char }}
+            </span>
           </span>
           <br />
           <span class="text-content_container">
-            <span @mouseover="textActive8 = true" @mouseleave="textActive8 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive8 }]">I</span>
-            <span @mouseover="textActive9 = true" @mouseleave="textActive9 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive9 }]">'</span>
-            <span @mouseover="textActive10 = true" @mouseleave="textActive10 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive10 }]">m</span>
-            <span>&nbsp;</span>
+            <span v-for="(char, index) in welcomeTwo" :key="index"
+                  @mouseover="setActive(index + welcomeOne.length)"
+                  @mouseleave="setInactive(index + welcomeOne.length)"
+                  :class="[{ 'animate__animated animate__headShake': activeTexts[index + welcomeOne.length] }]">
+              {{ char === ' ' ? '\u00A0' : char }}
+            </span>
           </span>
-          <span class="bordered-text text-content_container">
-            <span @mouseover="textActive11 = true" @mouseleave="textActive11 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive11 }]">D</span>
-            <span @mouseover="textActive12 = true" @mouseleave="textActive12 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive12 }]">a</span>
-            <span @mouseover="textActive13 = true" @mouseleave="textActive13 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive13 }]">v</span>
-            <span @mouseover="textActive14 = true" @mouseleave="textActive14 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive14 }]">i</span>
-            <span @mouseover="textActive15 = true" @mouseleave="textActive15 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive15 }]">d</span>
+          <span class="text-content_container bordered-text">
+            <span v-for="(char, index) in welcomeThree" :key="index"
+                  @mouseover="setActive(index + welcomeOne.length + welcomeTwo.length)"
+                  @mouseleave="setInactive(index + welcomeOne.length + welcomeTwo.length)"
+                  :class="[{ 'animate__animated animate__headShake': activeTexts[index + welcomeOne.length + welcomeTwo.length] }]">
+              {{ char === ' ' ? '\u00A0' : char }}
+            </span>
           </span>
           <br />
           <span class="text-content_container">
-            <span @mouseover="textActive17 = true" @mouseleave="textActive17 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive17 }]">W</span>
-            <span @mouseover="textActive18 = true" @mouseleave="textActive18 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive18 }]">e</span>
-            <span @mouseover="textActive19 = true" @mouseleave="textActive19 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive19 }]">b</span>
-            <span>&nbsp;</span>
-            <span @mouseover="textActive20 = true" @mouseleave="textActive20 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive20 }]">D</span>
-            <span @mouseover="textActive21 = true" @mouseleave="textActive21 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive21 }]">e</span>
-            <span @mouseover="textActive22 = true" @mouseleave="textActive22 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive22 }]">v</span>
-            <span @mouseover="textActive23 = true" @mouseleave="textActive23 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive23 }]">e</span>
-            <span @mouseover="textActive24 = true" @mouseleave="textActive24 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive24 }]">l</span>
-            <span @mouseover="textActive25 = true" @mouseleave="textActive25 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive25 }]">o</span>
-            <span @mouseover="textActive26 = true" @mouseleave="textActive26 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive26 }]">p</span>
-            <span @mouseover="textActive27 = true" @mouseleave="textActive27 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive27 }]">e</span>
-            <span @mouseover="textActive28 = true" @mouseleave="textActive28 = false"
-              :class="[{ 'animate__animated animate__headShake': textActive28 }]">r</span>
+            <span v-for="(char, index) in welcomeFour" :key="index"
+                  @mouseover="setActive(index + welcomeOne.length + welcomeTwo.length + welcomeThree.length)"
+                  @mouseleave="setInactive(index + welcomeOne.length + welcomeTwo.length + welcomeThree.length)"
+                  :class="[{ 'animate__animated animate__headShake': activeTexts[index + welcomeOne.length + welcomeTwo.length + welcomeThree.length] }]">
+              {{ char === ' ' ? '\u00A0' : char }}
+            </span>
           </span>
         </div>
       </div>
@@ -105,37 +72,14 @@ export default {
   name: 'HomePage',
   data() {
     return {
-      textActive1: false,
-      textActive2: false,
-      textActive3: false,
-      textActive4: false,
-      textActive5: false,
-      textActive6: false,
-      textActive7: false,
-      textActive8: false,
-      textActive9: false,
-      textActive10: false,
-      textActive11: false,
-      textActive12: false,
-      textActive13: false,
-      textActive14: false,
-      textActive15: false,
-      textActive16: false,
-      textActive17: false,
-      textActive18: false,
-      textActive19: false,
-      textActive20: false,
-      textActive21: false,
-      textActive22: false,
-      textActive23: false,
-      textActive24: false,
-      textActive25: false,
-      textActive26: false,
-      textActive27: false,
-      textActive28: false,
       consoleValue: "",
       seperator: '<span class="seperator">== == == == == == == == == == == == == == == == == ==</span><br />',
-      avaliableCommands: ['contact', 'help', 'clear', 'pong', 'about', 'time', 'say {}']
+      avaliableCommands: ['contact', 'help', 'clear', 'pong', 'about', 'time', 'say {}'],
+      welcomeOne: this.$t('home.welcomeOne'),
+      welcomeTwo: this.$t('home.welcomeTwo'),
+      welcomeThree: this.$t('home.welcomeThree'),
+      welcomeFour: this.$t('home.welcomeFour'),
+      activeTexts: []
     }
   },
   mounted() {
@@ -186,6 +130,12 @@ export default {
     },
     scrolledOn() {
       this.$emit('actualActiveNav', 'home');
+    },
+    setActive(index) {
+      this.activeTexts[index] = true;
+    },
+    setInactive(index) {
+      this.activeTexts[index] = false;
     }
   },
   computed: {
@@ -297,7 +247,16 @@ $$$$$$$/  $$$$$$$/    $/    $$/ $$$$$$$/$$$$$$$/ $$$$$$$/     $/    $$/  $$/  $$
   watch: {
     consoleOutput: function () {
       this.consoleFocus();
+    },
+    '$i18n.locale': function () {
+      this.welcomeOne = this.$t('home.welcomeOne');
+      this.welcomeTwo = this.$t('home.welcomeTwo');
+      this.welcomeThree = this.$t('home.welcomeThree');
+      this.welcomeFour = this.$t('home.welcomeFour');
     }
+  },
+  mounted() {
+    console.log(this.$t('home.welcomeTwo'))
   }
 }
 </script>
