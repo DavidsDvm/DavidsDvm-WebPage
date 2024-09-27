@@ -1,45 +1,50 @@
 <template>
-  <div class="container">
-    <div class="timeline">
-      <div class="timeline-content">
-        <span class="bullet">&bull;</span>
+  <Scrollwatcher sentinal-name="{{ `experience-${title}` }}" @on-intersection-element="scrolledOn()" />
+  <transition enter-active-class="animate__animated animate__jackInTheBox" leave-active-class="animate__animated animate__hinge">
+    <div v-if="actualItem" class="container">
+      <div class="timeline">
+        <div class="timeline-content">
+          <span class="bullet">&bull;</span>
 
-        <h3 class="title">{{ title }}</h3>
-        <h4 class="company">{{ company }}</h4>
-        <time class="date">{{ date }}</time>
+          <h3 class="title">{{ title }}</h3>
+          <h4 class="company">{{ company }}</h4>
+          <time class="date">{{ date }}</time>
+        </div>
+      </div>
+      <div class="description-section">
+        <p>{{ description }}</p>
+        <LinkInline v-if="link" :href="link">
+          {{ $t('experience.readMore') }}
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="chevron-icon"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 6l6 6l-6 6" />
+          </svg>
+        </LinkInline>
       </div>
     </div>
-    <div class="description-section">
-      <p>{{ description }}</p>
-      <LinkInline v-if="link" :href="link">
-        {{ $t('experience.readMore') }}
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="chevron-icon"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          stroke-width="2"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M9 6l6 6l-6 6" />
-        </svg>
-      </LinkInline>
-    </div>
-  </div>
+  </transition>
 </template>
 
 <script>
 import LinkInline from './LinkInline';
+import Scrollwatcher from './ScrollWatcher';
 
 export default {
   name: 'ExperienceItem',
   components: {
     LinkInline,
+    Scrollwatcher
   },
   props: {
     title: {
@@ -62,7 +67,17 @@ export default {
       type: String,
       required: true
     }
-  }
+  },
+  data(){
+    return {
+      actualItem: false
+    }
+  },
+  methods: {
+    scrolledOn() {
+      this.actualItem = true;
+    },
+  },
 };
 </script>
 
