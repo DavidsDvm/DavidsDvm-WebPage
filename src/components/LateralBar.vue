@@ -1,6 +1,6 @@
 <template>
   <transition name="view" appear enter-active-class="animate__animated animate__backInDown" leave-active-class="animate__animated animate__bounceOut">
-  <div class="lateralBar d-flex flex-column flex-shrink-0 bg-dark__project">  
+  <div class="lateralBar d-flex flex-column flex-shrink-0 bg-dark__project">
     <ul class="nav-custom nav nav-pills nav-flush flex-column mb-auto text-center">
       <a @mouseover="isActive4 = true" @mouseleave="isActive4 = false" :class="[{ 'animate__animated animate__flip' : isActive4 }]" href="/" class="nav-link nav-item__logo py-3 mb-3 mt-2">
         <img src="../assets/img/personalLogo.webp" alt="mdo" class="rounded-circle barIcons--tittle">
@@ -40,7 +40,7 @@
       </li>
       <li class="nav-item nav-item__below">
         <div class="nav-link my-3">
-          <ion-icon @click="socialMedia('stackoverflow')" @mouseover="isActive3 = true" @mouseleave="isActive3 = false" :class="[{ 'animate__animated animate__heartBeat' : isActive3 }, errorClass]" name="logo-stackoverflow"></ion-icon>
+          <ion-icon @click="changeLangue()" @mouseover="isActive3 = true" @mouseleave="isActive3 = false" :class="[{ 'animate__animated animate__heartBeat' : isActive3 }, errorClass]" name="language-outline"></ion-icon>
         </div>
       </li>
     </ul>
@@ -83,6 +83,14 @@ export default {
       scrollSection(element) {
         const sectionNameID = '#' + this.sectionsNames[element];
         this.$emit('scrollSection', sectionNameID);
+      },
+      changeLangue(){
+        const lang = this.$i18n.locale;
+        if(lang == 'en'){
+          this.$i18n.locale = 'es';
+        }else{
+          this.$i18n.locale = 'en';
+        }
       }
     }
 }

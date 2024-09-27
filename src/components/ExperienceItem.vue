@@ -12,7 +12,7 @@
     <div class="description-section">
       <p>{{ description }}</p>
       <LinkInline v-if="link" :href="link">
-        Saber más
+        {{ $t('experience.readMore') }}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="chevron-icon"

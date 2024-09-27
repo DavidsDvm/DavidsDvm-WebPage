@@ -3,7 +3,7 @@
         <div class="Projects-tittle">
             <div class="Projects--main">
                 <div class="sectionsTittle--text">
-                    >Projects
+                    >{{ $t('projects.title') }}
                 </div>
             </div>
         </div>
@@ -11,13 +11,10 @@
             <transition name="projectsLeft" enter-active-class="animate__animated animate__lightSpeedInRight" leave-active-class="animate__animated animate__bounceOut">
             <div v-if="projectsLeft" class="Projects--contentLeft">
                 <div class="Projects--contentLeft__main">
-                    <p class="Projects--contentLeft__main-text">Flowy</p>
+                    <p class="Projects--contentLeft__main-text">{{ $t('projects.projects.first.title')  }}</p>
                     <div class="Projects--contentLeft__main-description">
                         <span>
-                            E-commerce project, this projects is based on the
-                            little offert of online sites to buy flowers on
-                            LATAM countries, project made using Flask, MariaDB
-                            JavaScript
+                            {{ $t('projects.projects.first.description') }}
                         </span>
                     </div>
                     <div class="Projects--contentLeft__main-social">
@@ -35,13 +32,10 @@
             <transition name="projectsRight" enter-active-class="animate__animated animate__lightSpeedInLeft" leave-active-class="animate__animated animate__bounceOut">
             <div v-if="projectsRight" class="Projects--contentRight">
                 <div class="Projects--contentRight__main">
-                    <p class="Projects--contentRight__main-text">MediFlow</p>
+                    <p class="Projects--contentRight__main-text">{{ $t('projects.projects.second.title') }}</p>
                     <div class="Projects--contentRight__main-description">
                         <span>
-                             The objective of the project is to manage shifts
-                             and assign them within an interactive calendar.
-                             Project developed for Senasoft edition 2021,
-                             with Flask, SqlAlchemy, JavaScript.
+                          {{ $t('projects.projects.second.description') }}
                         </span>
                     </div>
                     <div class="Projects--contentRight__main-social">
@@ -58,12 +52,10 @@
             <transition name="projectsLeft" enter-active-class="animate__animated animate__lightSpeedInRight" leave-active-class="animate__animated animate__bounceOut">
             <div v-if="projectsLeft" class="Projects--contentLeft">
                 <div class="Projects--contentLeft__main">
-                    <p class="Projects--contentLeft__main-text">Mascotas Olarte</p>
+                    <p class="Projects--contentLeft__main-text">{{ $t('projects.projects.third.title') }}</p>
                     <div class="Projects--contentLeft__main-description">
                         <span>
-                            Web Information System for the veterinarian center
-                            "Mascotas Olarte" using HTML5, CSS3, Bootstrap, PHP,
-                            MySQL; You can check the full project on the below GitHub repository
+                          {{ $t('projects.projects.third.description') }}
                         </span>
                     </div>
                     <div class="Projects--contentLeft__main-social">

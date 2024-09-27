@@ -1,7 +1,7 @@
 <template>
-  <div class="contactMe--mainContent" id="contactMeMainContent">
+  <div class="Projects--mainContent" id="ExperienceMainContent">
     <div class="sectionsTittle--text__contactMe">
-      >Experiencia
+      >{{ $t('experience.title') }}
     </div>
     <Scrollwatcher sentinal-name="Experience" @on-intersection-element="scrolledOn()" />
     <div class="sectionsContent--experience" id="contactMeMainContent">
@@ -28,19 +28,17 @@ export default {
     return {
       EXPERIENCE: [
         {
-          date: 'Jan 2024 - Actually',
-          title: 'Full Stack Engineer',
-          company: 'Wayru',
-          description:
-            'As a Software Engineer at Wayru, I focus on several key areas: I specialize in React Native for mobile app development, creating solutions for both Android and iOS. On the backend, I work with Node.js and NestJS, utilizing the Strapi framework to build efficient systems. I also contribute to developing software for global network equipment management and WiFi network administration, focusing on optimizing network performance. Additionally, I work with blockchain technology, particularly Algorand and Ethereum Virtual Machines (EVMs), managing multi-chain integrations and ensuring seamless interoperability across platforms.',
-          link: 'https://www.wayru.io/',
+          title: this.$t('experience.jobs.first.title'),
+          date: this.$t('experience.jobs.first.date'),
+          company: this.$t('experience.jobs.first.company'),
+          description: this.$t('experience.jobs.first.description'),
+          link: this.$t('experience.jobs.first.link'),
         },
         {
-          date: 'Oct 23 - Jan 24',
-          title: 'Backend Developer',
-          company: 'Resuelve tu deuda',
-          description:
-            'As a Back-End Developer at Go Bravo, my role involved enhancing application infrastructure and internal software architecture. I developed back-end services using Java Spring Boot and automated processes with Python scripting. Additionally, I contributed to front-end projects with Angular and participated in various software lifecycle tasks such as integration testing and continuous deployment.',
+          title: this.$t('experience.jobs.second.title'),
+          date: this.$t('experience.jobs.second.date'),
+          company: this.$t('experience.jobs.second.company'),
+          description: this.$t('experience.jobs.second.description'),
         },
       ],
     };
@@ -50,7 +48,27 @@ export default {
       this.contactMe = true;
       this.$emit('actualActiveNav', 'contact');
     },
-  }
+  },
+  watch: {
+    // check if language has changed to update the experience list
+    '$i18n.locale': function () {
+      this.EXPERIENCE = [
+        {
+          title: this.$t('experience.jobs.first.title'),
+          date: this.$t('experience.jobs.first.date'),
+          company: this.$t('experience.jobs.first.company'),
+          description: this.$t('experience.jobs.first.description'),
+          link: this.$t('experience.jobs.first.link'),
+        },
+        {
+          title: this.$t('experience.jobs.second.title'),
+          date: this.$t('experience.jobs.second.date'),
+          company: this.$t('experience.jobs.second.company'),
+          description: this.$t('experience.jobs.second.description'),
+        },
+      ];
+    },
+  },
 };
 </script>
 
