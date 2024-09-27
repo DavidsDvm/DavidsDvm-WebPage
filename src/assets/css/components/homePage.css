@@ -4,7 +4,7 @@
 		left: 0%;
 	}
 	20% {
-		top: 25%; 
+		top: 25%;
 		left: 25%;
 	}
 	30% {
@@ -120,9 +120,9 @@
 
 .bigCenter-text{
     width: 30%;
-    font-size: 4rem;
+    font-size: 3.8rem;
     text-shadow:
-    -0.1vh -0.1vh 0 #000,  
+    -0.1vh -0.1vh 0 #000,
     0.1vh -0.1vh 0 #000,
     -0.1vh 0.1vh 0 #000,
     0.1vh 0.1vh 0 #000;
@@ -132,7 +132,7 @@
     margin: 0;
     color: #000;
     text-shadow:
-    -0.1vh -0.1vh 0 #fff,  
+    -0.1vh -0.1vh 0 #fff,
     0.1vh -0.1vh 0 #fff,
     -0.1vh 0.1vh 0 #fff,
     0.1vh 0.1vh 0 #fff;
@@ -216,7 +216,7 @@
 	overflow: hidden;
     font-size: 0.6vw;
     animation: glitch 0.2s linear infinite;
-    animation-play-state: paused;   
+    animation-play-state: paused;
 }
 .console .output pre:hover {
     animation-play-state: running;
@@ -230,7 +230,7 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
 }
-		
+
 .action span {
     display: inline-block;
     /* width: 60px; */
@@ -299,7 +299,7 @@ span.seperator {
 		height: 100vh;
 		display: flex;
 		flex-direction: column;
-		
+
 	}
 
 	.bigCenter-text,
@@ -316,7 +316,7 @@ span.seperator {
 		height: 48vh;
 		width: 80vw;
 	}
-	
+
 	.bigCenter-console_main .console-card {
 		height: 100vh;
 		width: 80vw;
