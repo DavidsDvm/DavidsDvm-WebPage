@@ -15,12 +15,17 @@
           <ion-icon name="accessibility-outline" class="barIcons"></ion-icon>
         </div>
       </li>
-     <li @mouseover="isActive7 = true" @mouseleave="isActive7 = false" :class="[{ 'animate__animated animate__jello' : isActive7 }]" class="nav-item nav-item__above">
-        <div @click="scrollSection('projects')" :class="navActive == 'projects' ? 'icon-active' : ''" class="nav-link py-3">
+      <li @mouseover="isActive7 = true" @mouseleave="isActive7 = false" :class="[{ 'animate__animated animate__jello' : isActive7 }]" class="nav-item nav-item__above">
+        <div @click="scrollSection('experience')" :class="navActive == 'experience' ? 'icon-active' : ''" class="nav-link py-3">
           <ion-icon name="briefcase-outline" class="barIcons"></ion-icon>
         </div>
       </li>
-      <li @mouseover="isActive8 = true" @mouseleave="isActive8 = false" :class="[{ 'animate__animated animate__jello' : isActive8 }]" class="nav-item nav-item__above">
+     <li @mouseover="isActive8 = true" @mouseleave="isActive8 = false" :class="[{ 'animate__animated animate__jello' : isActive8 }]" class="nav-item nav-item__above">
+        <div @click="scrollSection('projects')" :class="navActive == 'projects' ? 'icon-active' : ''" class="nav-link py-3">
+          <ion-icon name="code-outline" class="barIcons"></ion-icon>
+        </div>
+      </li>
+      <li @mouseover="isActive9 = true" @mouseleave="isActive9 = false" :class="[{ 'animate__animated animate__jello' : isActive9 }]" class="nav-item nav-item__above">
         <div @click="scrollSection('contact')" :class="navActive == 'contact' ? 'icon-active' : ''" class="nav-link py-3">
           <ion-icon name="mail-outline" class="barIcons"></ion-icon>
         </div>
@@ -61,10 +66,12 @@ export default {
         isActive6 : false,
         isActive7 : false,
         isActive8 : false,
+        isActive9 : false,
         errorClass : 'barIcons md hydrated',
         sectionsNames : {
           home : "homeMainContent",
           about : "aboutMeMainContent",
+          experience : "experienceMainContent",
           projects : "ProjectsMainContent",
           contact : "contactMeMainContent"
         }

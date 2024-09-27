@@ -1,10 +1,10 @@
 <template>
-  <div class="Projects--mainContent" id="ExperienceMainContent">
+  <div class="Projects--mainContent" id="experienceMainContent">
     <div class="sectionsTittle--text__contactMe">
       >{{ $t('experience.title') }}
     </div>
     <Scrollwatcher sentinal-name="Experience" @on-intersection-element="scrolledOn()" />
-    <div class="sectionsContent--experience" id="contactMeMainContent">
+    <div class="sectionsContent--experience">
       <ul class="relative mt-16">
         <li class="no-bullets" v-for="experience in EXPERIENCE" :key="experience.title">
           <ExperienceItem v-bind="experience" />
@@ -45,8 +45,7 @@ export default {
   },
   methods: {
     scrolledOn() {
-      this.contactMe = true;
-      this.$emit('actualActiveNav', 'contact');
+      this.$emit('actualActiveNav', 'experience');
     },
   },
   watch: {

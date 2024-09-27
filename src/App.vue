@@ -21,7 +21,7 @@ export default {
         linkedin : "https://linkedin.com/in/davidsdvm/",
         stackoverflow: "https://stackoverflow.com/users/16787643/davidsdvm"
       }
-    } 
+    }
   },
   methods: {
     getActualScroll(element) {
