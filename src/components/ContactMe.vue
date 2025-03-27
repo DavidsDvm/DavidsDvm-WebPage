@@ -5,7 +5,7 @@
     </div>
     <Scrollwatcher sentinal-name="AboutMe" @on-intersection-element="scrolledOn()" />
     <transition name="contact" enter-active-class="animate__animated animate__zoomInDown" leave-active-class="animate__animated animate__bounceOut">
-    <div v-if="contactMe" class="contactMe">
+    <div v-if="isContactMeActive" class="contactMe">
         <div class="contactMe--main">
           <div class="text-white contactMe--main__bigText d-flex justify-content-center">
             {{ $t('contactMe.bigtextOne') }} <span class="bordered-text">{{ $t('contactMe.bigtextTwo') }}</span>
@@ -32,7 +32,7 @@ export default {
     name: 'ContactMe',
     data(){
       return{
-        contactMe : false
+        isContactMeActive: false
       }
     },
     components: {
@@ -40,7 +40,7 @@ export default {
     },
     methods: {
       scrolledOn() {
-        this.contactMe = true;
+        this.isContactMeActive = true;
         this.$emit('actualActiveNav', 'contact');
       },
       sendMail() {
