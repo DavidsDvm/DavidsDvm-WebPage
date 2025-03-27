@@ -57,7 +57,7 @@ const i18n = createI18n({
           press the below button and send me a message, I'll wait
           for your message.`,
         buttonText: 'Contact Me',
-        disclaimer: 'Made and designed with <3 by @DavidsDvm'
+        disclaimer: 'Made and designed with ❤️ by DavidsDvm'
       },
       experience: {
         title: 'Experience',
@@ -176,7 +176,7 @@ const i18n = createI18n({
           presiona el botón de abajo y envíame un mensaje, esperaré
           tu mensaje.`,
         buttonText: 'Contáctame',
-        disclaimer: 'Hecho y diseñado con <3 por @DavidsDvm'
+        disclaimer: 'Hecho y diseñado con ❤️ por DavidsDvm'
       },
       experience: {
         title: 'Experiencia',
