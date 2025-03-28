@@ -125,6 +125,7 @@ export default {
   color: #54555A;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 @media (max-width: 680px) {

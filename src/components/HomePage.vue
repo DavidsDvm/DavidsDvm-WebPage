@@ -125,7 +125,6 @@ export default {
 
       this.consoleValue = ""
       allText = allText + this.seperator;
-      console.log('sise hizo');
       this.$refs.consoleData.innerHTML = allText;
     },
     scrolledOn() {
@@ -174,14 +173,13 @@ $$$$$$$/  $$$$$$$/    $/    $$/ $$$$$$$/$$$$$$$/ $$$$$$$/     $/    $$/  $$/  $$
           var allText = this.$refs.consoleData.innerHTML;
 
           for (var i = 0; i < commandsArray.length; i++) {
-            var out = '<span>' + commandsArray[i] + '</span><br/>'
-            var allText = allText + out;
+            allText = allText + '<span>' + commandsArray[i] + '</span><br/>';
           }
 
-          this.consoleValue = ""
+          this.consoleValue = "";
           allText = allText + this.seperator;
-
-          return (allText);
+          this.$refs.consoleData.innerHTML = allText;
+          return allText;
 
         case 'contact':
           var contactArray = ['>Contact:', '[GitHub](<span class="blue">https://github.com/DavidsDvm</span>)',
@@ -254,9 +252,6 @@ $$$$$$$/  $$$$$$$/    $/    $$/ $$$$$$$/$$$$$$$/ $$$$$$$/     $/    $$/  $$/  $$
       this.welcomeThree = this.$t('home.welcomeThree');
       this.welcomeFour = this.$t('home.welcomeFour');
     }
-  },
-  mounted() {
-    console.log(this.$t('home.welcomeTwo'))
   }
 }
 </script>
