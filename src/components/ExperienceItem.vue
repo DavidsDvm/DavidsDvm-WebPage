@@ -107,10 +107,11 @@ export default {
 
 .bullet {
   position: absolute;
-  left: -56px;
+  left: -53px;
+  top: 0.5rem;
   color: #0E0E11;
   text-shadow: -0.1vh -0.1vh 0 #8D8E91, 0.1vh -0.1vh 0 #8D8E91, -0.1vh 0.1vh 0 #8D8E91, 0.1vh 0.1vh 0 #8D8E91;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   border-radius: 50%;
 }
 
@@ -142,5 +143,68 @@ export default {
 .chevron-icon {
   width: 1.25rem;
   height: 1.25rem;
+}
+
+/* Mobile styles */
+@media (max-width: 680px) {
+  .container {
+    margin: 0 1.5rem;
+    padding-bottom: 2rem;
+    gap: 1.5rem;
+  }
+
+  .container::before {
+    left: -20px;
+    border-left-width: 1px;
+  }
+
+  .bullet {
+    left: -24px;
+    top: 0.4rem;
+    font-size: 1.75rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .company {
+    font-size: 1.1rem;
+  }
+
+  .date {
+    font-size: 0.8rem;
+  }
+
+  .description-section {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 380px) {
+  .container {
+    margin: 0 1rem;
+    padding-bottom: 1.5rem;
+    gap: 1rem;
+  }
+
+  .container::before {
+    left: -15px;
+  }
+
+  .bullet {
+    left: -30px;
+    top: 0.3rem;
+    font-size: 1.25rem;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+
+  .company {
+    font-size: 1rem;
+  }
 }
 </style>

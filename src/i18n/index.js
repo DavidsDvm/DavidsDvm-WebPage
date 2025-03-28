@@ -31,9 +31,12 @@ export const getDefaultLanguage = () => {
 export const initializeI18n = () => {
   try {
     return createI18n({
+      globalInjection: true,
       legacy: false, // Enable Composition API mode
       locale: getDefaultLanguage(),
       fallbackLocale: 'en',
+      warnHtmlMessage: false,
+      warnHtmlInMessage: "off",
       messages
     })
   } catch (error) {
